@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffe Star</title>
+</head>
+<body>
+
+    <div class="circulo"></div>
+
+    <a href="./index.html"><img src="./img/logo.png" alt="logotipo" class="logo"></a>
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é só música é <span id="nome">A Música</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error. Aliquam sapiente voluptatibus corporis at hic, quas beatae totam amet voluptatum ab laboriosam ex, labore nisi officia, quisquam inventore voluptate!</p>
+            <button id="botao">Deixe um Like!</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/logo.png" alt="copo de café verde" class="starcoffe">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="img/ganbino.png" alt="ganbino" class="copo-pequeno verde">
+        <img src="img/carti.png" alt="carti" class="copo-pequeno amarelo">
+        <img src="img/ye.png" alt="kanye" class="copo-pequeno rosa">
+    </div>    
+
+</body>
+
+<script>
+    let circulo = document.querySelector(".circulo")
+    let imgcopo = document.querySelector(".starcoffe")
+    let verde = document.querySelector(".verde")
+    let amarelo =document.querySelector(".amarelo")
+    let rosa = document.querySelector(".rosa")
+    let nome = document.querySelector("#nome")
+    let botao = document.querySelector("#botao")
+
+    verde.addEventListener("click", () => {
+        imgcopo.src ="./img/ganbino.png"
+        circulo.style.background="rgba(116, 101, 80)"
+        nome.innerHTML="Childish Gambino"
+        nome.style.color="rgba(116, 101, 80)"
+        botao.style.background="rgba(116, 101, 80)"
+    })
+
+    amarelo.addEventListener("click", () => {
+        imgcopo.src ="./img/carti.png"
+        circulo.style.background="#000"
+        nome.innerHTML="Playboi Carti"
+        nome.style.color="#000"
+        botao.style.background="#000"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgcopo.src ="./img/ye.png"
+        circulo.style.background="#ff8205"
+        nome.innerHTML="Kanye west"
+        nome.style.color="#ff8205"
+        botao.style.background="#ff8205"
+    })
+</script>
+
+</html>
